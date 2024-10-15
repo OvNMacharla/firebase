@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "firebase-food-order"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "firebase-food-order-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
